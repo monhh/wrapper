@@ -1,0 +1,26 @@
+html {
+    box-sizing: border-box;
+    text-size-adjust: none;
+}
+
+ *,
+ *::before,
+ *::after {
+     box-sizing: inherit;
+     /* debug ------------------ */
+     /* outline: 2px solid lime; */
+     /* background: orange; */
+ }
+
+ /* Exception-based styling ----------------------- */
+ blockquote, body, dd, dl, figure, h1, h2, h3, h4, p {
+     margin-block: 0;
+ }
+ body, h1, h2, h3, h4, p, ul, ol, li, dd, figure, figcaption, dl, dd, dt {
+    padding: 0;
+}
+
+ul[class] {
+    list-style-type: none; ;
+}
+

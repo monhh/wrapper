@@ -1,0 +1,32 @@
+body {
+    background: var(--color-global-bg);
+    color: var(--color-global-text);
+
+    margin: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+
+    padding: 1rem;
+}
+
+/* WRAPPER:A utility with a max width that contains child elements and horizontal centers them */
+.wrapper {
+  margin-inline: auto;
+  max-width: var(--wrapper-max-width);
+  padding-inline: var(--gutter);
+}
+
+/* AUTO GRID: Set the minimum item size with `--auto-grid-min-size` and 
+  get a fully responsive grid with no media queries.*/
+.auto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size, 16rem), 1fr));
+  grid-gap: 1rem;
+}
+   
+/* Presentational styles */
+li {
+  padding: 5rem 1rem;
+  background: hwb(10 0% 55%);
+}
+  
